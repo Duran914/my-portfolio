@@ -1,0 +1,44 @@
+.my-image
+    width: 75px
+
+
+.navbar
+    background-color: $light-grey
+    padding: 0
+
+
+.navbar-toggler
+    background-color: $light-blue
+    margin-right: 10px 
+
+.navbar-name
+    font-family: $name-head
+    font-size: 30px
+
+.navbar-nav 
+    margin-right: 10px
+
+
+.navbar-nav li
+    float: right
+    font-family: $main-font
+    font-size: 20px
+    a
+        color: $dark-grey
+        border-bottom: 4px solid $grey
+        padding-bottom: 10px
+        transition-duration: 0.4s
+        
+        &:hover
+            font-weight: 10px
+            color: $dark-grey
+            border-bottom: 4px solid $dark-grey
+
+@media screen and (max-width:990px)
+    .navbar-nav li
+        text-align: center
+        a
+            padding-bottom: 10px
+    .navbar-nav 
+        margin-right: 0px
+

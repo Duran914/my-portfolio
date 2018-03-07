@@ -7,18 +7,22 @@
     &:hover
         background-color: darken($grey, 20%)
         border-color: $grey
-    @media screen and (max-width:990px)
+    @media screen and (max-width:$lg-break-point)
         width: 100%
         margin-top: 0px
 
-.btn-dark-grey
+.btn-dark-grey, .github-btn
     background-color: $dark-grey
     color: $white
     float: right
     border-color: $dark-grey
+
     &:hover
         background-color: darken($dark-grey, 20%)
         border-color: $dark-grey
-    @media screen and (max-width:990px)
+    @media screen and (max-width:$lg-break-point)
         width: 100%
-        margin-top: 0px
+        margin-top: 10px
+
+.github-btn
+    float: left

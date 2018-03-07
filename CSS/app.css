@@ -21,6 +21,9 @@ body {
 .section-header {
   font-size: 30px;
   color: #CDD4D9; }
+  @media screen and (max-width: 769px) {
+    .section-header {
+      text-align: center; } }
 
 .section-sm-header {
   font-size: 20px; }
@@ -30,9 +33,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 20px; }
 
-.ShowCase {
-  background-size: cover; }
-
+@media screen and (max-width: 990px) {
+  .livePicture {
+    text-align: center;
+    margin-top: 20px; } }
 @media screen and (max-width: 990px) {
   .aboutUs {
     float: none;
@@ -48,13 +52,19 @@ body {
   font-size: 90px;
   padding: 0 15px 0 15px; }
 
-.pokemonPic, .ztechPic {
-  width: 450px;
-  border-radius: 15px;
+.pokemonPic, .ztechPic, .meteorPic {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px; }
+
+.keyboardPic {
+  width: 100%;
+  border-radius: 5px;
   box-shadow: 0 0 20px; }
 
 .my-image {
-  width: 75px; }
+  width: 75px;
+  margin-left: 10px; }
 
 .navbar {
   background-color: #CDD4D9;
@@ -123,8 +133,7 @@ body {
 .foot i.fa {
   background-color: #99A1AE;
   color: #000000;
-  width: 35px;
-  padding: 10px;
+  padding: 5px;
   margin-left: 7px;
   border-radius: 5px;
   cursor: pointer;
@@ -132,6 +141,16 @@ body {
   .foot i.fa:hover {
     background-color: #7d8797; }
 
+@media screen and (max-width: 769px) {
+  .foot {
+    text-align: center; }
+
+  .foot i.fa {
+    float: none; }
+
+  .foot .social-icons {
+    float: none;
+    margin-top: 20px; } }
 .my-btn {
   background-color: #99A1AE;
   color: #ffffff;

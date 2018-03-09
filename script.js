@@ -13,36 +13,48 @@ const  fName = document.querySelector('#first-name');
 
 // html page sections
 const showCase = document.querySelector('.show-case');
-      aboutUs = document.querySelector('.about-me');
+      aboutMe = document.querySelector('.about-me');
       myWork = document.querySelector('.my-work');
       contactMe = document.querySelector('.contact');
 
 
 
-
 // navbar links
-const entireNavbar = document.querySelector('#navBar');
+const navbar = document.querySelector('#navBar');
       navHome = document.querySelector('#home');
       navProjects = document.querySelector('#projects');
       navAbout = document.querySelector('#about');
       navContact = document.querySelector('#contact');
 
+
 // Event listeners
 hambugerMenu.addEventListener('click', rotateHambugerMenu);
 contactForm.addEventListener('submit', formValidation);
-entireNavbar.addEventListener('click',scrollToSection);
+navbar.addEventListener('click', scrollToSection);
  
 function scrollToSection(goto){
     let link = goto.target;
     console.log(link);
     
-    if(link == navProjects){        
+    if (link == navHome) {
+        showCase.scrollIntoView(
+            {behavior: "smooth",
+            block: "start"});
+    } 
+    else if(link == navProjects){        
         myWork.scrollIntoView(
         {behavior: "smooth",
         block: "start"});
     }
-    else{
-        console.log("something is wrong");
+    else if(link == navAbout){        
+        aboutMe.scrollIntoView(
+        {behavior: "smooth",
+        block: "start"});
+    }
+    else if(link == navContact){        
+        contactMe.scrollIntoView(
+        {behavior: "smooth",
+        block: "start"});
     }
 }
 // menu rotate funtion

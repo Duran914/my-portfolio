@@ -7,13 +7,12 @@ body {
   padding: 0; }
 
 .form-control {
-  background-color: #CDD4D9;
-  border: #586075; }
+  background-color: #CDD4D9; }
 
 .form-control:focus {
   background-color: #99A1AE;
   color: #000000;
-  border: #586075; }
+  border-color: #ffffff; }
 
 .form-group label {
   color: #99A1AE; }
@@ -68,7 +67,7 @@ body {
     text-align: center;
     margin-top: 20px; } }
 @media screen and (max-width: 992px) {
-  .aboutUs {
+  .about-me {
     float: none;
     text-align: center; } }
 .section-header {
@@ -104,12 +103,22 @@ body {
   border: none;
   margin-right: 10px; }
 
-.menuBars {
-  width: 40px; }
+.toggle {
+  font-size: 40px; }
+
+.fa.fa.bars {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition-duration: 0.4s; }
 
 .rotate90 {
-  -webkit-transform: rotate(50deg);
-  transform: rotate(50deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition-duration: 0.4s; }
+
+.unRotate90 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
   transition-duration: 0.4s; }
 
 .navbar-name {
@@ -219,5 +228,13 @@ body {
 
 .github-btn {
   float: left; }
+
+.err {
+  color: #ff5050;
+  float: right; }
+  @media screen and (max-width: 992px) {
+    .err {
+      float: none;
+      margin-left: 20px; } }
 
 /*# sourceMappingURL=app.css.map */

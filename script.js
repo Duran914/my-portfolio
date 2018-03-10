@@ -17,8 +17,6 @@ const showCase = document.querySelector('.show-case');
       myWork = document.querySelector('.my-work');
       contactMe = document.querySelector('.contact');
 
-
-
 // navbar links
 const navbar = document.querySelector('#navBar');
       navHome = document.querySelector('#home');
@@ -32,6 +30,7 @@ hambugerMenu.addEventListener('click', rotateHambugerMenu);
 contactForm.addEventListener('submit', formValidation);
 navbar.addEventListener('click', scrollToSection);
  
+// scrolling navbar-links function
 function scrollToSection(goto){
     let link = goto.target;
     console.log(link);
@@ -57,6 +56,8 @@ function scrollToSection(goto){
         block: "start"});
     }
 }
+
+
 // menu rotate funtion
 function rotateHambugerMenu(){
     if(hambugerMenu.className === "fa fa-bars unRotate90"){

@@ -1,3 +1,6 @@
+<?php
+include "sendmail.php";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,9 +12,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/c5b9554837.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="shortcut icon" href="assets/IMG/meSm.ico">
     <title>Johnny Duran</title>
     <link rel="stylesheet" href="CSS/app.css">
   </head>
+ 
   <body>
       <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#"><img src="assets/IMG/me.png" class="my-image" alt=""><span class="navbar-name">Johnny Duran</span></a>
@@ -35,12 +40,26 @@
             </ul>
           </div>
         </nav>
+
+ <?php if($msg == 'Message has been sent'): ?>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div id='alertMessage' class= "alert <?php echo $msgClass; ?>">
+          <?php echo $msg; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+ <?php endif; ?>
         <div class="container-fluid">
           <section class="show-case">
-          <div class="row">
+          <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div class="showcase-text">
-                  <h1> &ltWeb-Developer&gt<br> Hello, Im Johnny And I Build Responsive User Interfaces <br> &lt/Web-Developer&gt</h1>
+                  <h1> &ltWeb-Developer&gt<br> 
+                   <span class="type-writter-text"></span> <br>
+                   &lt/Web-Developer&gt</h1>
                 </div>
                 </div>
             </div>
@@ -50,7 +69,7 @@
           <div class="container" id="aboutContainer">
           <section class="about-me mt-3">
           <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-8 col-xl-9">
+              <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9">
               <div class="section-header about">ABOUT ME</div>
                 <div class="about-us-content mt-4">
                     <div class="card main-card">
@@ -58,15 +77,15 @@
                   <p>Hello, Im Johnny and im a Front-End web developer from Oxnard, CA.  
                     I am currently in my senior year at Cal State Northridge majoring in
                      Computer Information Technology.
-                    I specialize in creating dynamic web site and web apps.
+                    I specialize in creating dynamic web sites and web apps.
                   </p>
                   </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
                 <div class="livePic mt-5 mb-5">
-                <img class="livePicture" src="/assets/IMG/livePic.jpg" alt="">
+                <img class="livePicture" src="assets/IMG/livePic.jpg" alt="">
                 </div>
                 </div>
           </div>
@@ -107,7 +126,7 @@
                 <div class="card main-card">
                   <div class="card-body">
                       <div class="section-sm-header">PokeDex</div>
-                    <img class="pokemonPic mt-4 mb-4" src="/assets/IMG/pokedex.png" alt="">
+                    <img class="pokemonPic mt-4 mb-4" src="assets/IMG/pokedex.png" alt="">
                     <p><strong>ABOUT:</strong><br> A pokedex which lists Genereation 1 pokemon. Displays their attributes and statistics.</p>
                     <a class="btn btn-primary btn-dark-grey" href="">See App</a>
                     <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/PokeDex">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
@@ -120,7 +139,7 @@
                   <div class="card main-card">
                     <div class="card-body">
                         <div class="section-sm-header">Z-Tech</div>
-                      <img class="ztechPic mt-4 mb-4" src="/assets/IMG/ZTech.png" alt="">
+                      <img class="ztechPic mt-4 mb-4" src="assets/IMG/ZTech.png" alt="">
                       <p><strong>ABOUT:</strong><br> 
                         Z-Tech is a personal project based on a fictitious web design company. Front-End only.</p>
                       <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
@@ -136,7 +155,7 @@
                 <div class="card main-card">
                   <div class="card-body">
                       <div class="section-sm-header">Meteor</div>
-                    <img class="meteorPic mt-4 mb-4" src="/assets/IMG/meteor.png" alt="">
+                    <img class="meteorPic mt-4 mb-4" src="assets/IMG/meteor.png" alt="">
                     <p><strong>ABOUT:</strong><br> 
                       Meteor is personal project for a fictitious photography company. Front-End only.</p>
                     <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
@@ -153,27 +172,27 @@
           <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="section-header contactMe mb-3">CONTACT ME</div>
-                  <form action="" id="contact-form">
+                  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="contact-form">
                       <div class="row">
                       <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                       <div class="form-group">
                           <label for="first-name">First Name:</label><span class="err fName"></span>
-                          <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                          <input type="text" class="form-control" name="firstName" id="first-name" placeholder="Enter first name" required>
                       </div>
                       <div class="form-group">
                           <label for="last-name">Last Name:</label><span class="err lName"></span>
-                          <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                          <input type="text" class="form-control" name="lastName" id="last-name" placeholder="Enter last name" required>
                       </div>
             
                       <div class="form-group">
                         <label for="email">Email Address:</label><span class="err email"></span>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                       </div>
                       </div>
                       <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                       <div class="form-group">
                           <label for="message">Enter a Message</label><span class="err message"></span>
-                          <textarea class="form-control" id="message" rows="4"></textarea>
+                          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" id="sub-form-btn" class="btn my-btn">Submit</button>
                         </div>

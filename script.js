@@ -27,8 +27,22 @@ const navbar = document.querySelector('#navBar');
 
 // Event listeners
 hambugerMenu.addEventListener('click', rotateHambugerMenu);
-contactForm.addEventListener('submit', formValidation);
+// contactForm.addEventListener('submit', formValidation);
 navbar.addEventListener('click', scrollToSection);
+
+
+// Typewritter effect for showcase
+let typeWriteVar = 0;
+let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces'; /* Welcome message */
+
+window.onload = setTimeout( function typeWriter() {
+    
+  if (typeWriteVar < welcomeMessage.length) {
+    document.querySelector('.type-writter-text').innerHTML += welcomeMessage.charAt(typeWriteVar);
+    typeWriteVar++;
+    setTimeout(typeWriter, 100);
+  }
+}, 1500);
  
 // scrolling navbar-links function
 function scrollToSection(goto){
@@ -70,20 +84,31 @@ function rotateHambugerMenu(){
 // client side form validation
 
 function formValidation(e){
+
+    
     if (fName.value == "") {
-        document.querySelector('.err.fName').innerHTML = "Please enter a first name";
+        document.querySelector('.err.fName').innerHTML = "Please enter a vaild first name";
     } 
     if (lName.value == "") {
-        document.querySelector('.err.lName').innerHTML = "Please enter a last name";
+        document.querySelector('.err.lName').innerHTML = "Please enter a vaild last name";
     } 
     if (email.value == "") {
-        document.querySelector('.err.email').innerHTML = "Please enter an email address";
+        document.querySelector('.err.email').innerHTML = "Please enter a vaild email address";
     } 
+
     if (message.value == "") {
-        document.querySelector('.err.message').innerHTML = "Please enter a message";  
-    } 
+        document.querySelector('.err.message').innerHTML = "Please enter a message";
+    }
+        
 e.preventDefault();   
 }
+
+// make alert disapear
+
+const alert =  document.getElementById('alertMessage');
+window.onload = setTimeout( function() {
+        alert.remove();
+  }, 8000);
 
 
 

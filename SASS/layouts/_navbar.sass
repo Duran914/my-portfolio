@@ -57,7 +57,7 @@
             color: $dark-grey
             border-bottom: 4px solid $dark-grey
 
-@media screen and (max-width:990px)
+@media screen and (max-width:$lg-break-point)
     .navbar-nav li
         text-align: center
         a
@@ -65,3 +65,12 @@
     .navbar-nav 
         margin-right: 0px
 
+@media screen and (max-width:$sm-break-point)
+    .my-image
+        width: 35px
+
+    .toggle
+        font-size: 25px
+    .navbar-name
+        font-size: 25px
+    

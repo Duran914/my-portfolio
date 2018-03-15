@@ -51,12 +51,6 @@ body {
       .showcase-text h1 {
         font-size: 35px; } }
 
-.type-writter-text {
-  overflow: hidden;
-  border-right: 0.15em solid #000000;
-  letter-spacing: 0.1em;
-  animation: typing 5.5s, blink-caret 0.75s infinite; }
-
 .section-header {
   font-size: 30px;
   margin-left: 20px;
@@ -69,15 +63,6 @@ body {
 .section-sm-header {
   font-size: 20px; }
 
-.livePicture {
-  width: 235px;
-  border-radius: 5px;
-  box-shadow: 0 0 20px; }
-
-@media screen and (max-width: 992px) {
-  .livePicture {
-    text-align: center;
-    margin-top: 20px; } }
 @media screen and (max-width: 992px) {
   .about-me {
     float: none;
@@ -85,22 +70,6 @@ body {
 .about-us-content {
   line-height: 40px;
   font-size: 20px; }
-
-.devicon {
-  font-size: 90px;
-  padding: 0 15px 0 15px; }
-  @media screen and (max-width: 768px) {
-    .devicon {
-      padding-bottom: 15%; } }
-
-.pokemonPic, .ztechPic, .meteorPic {
-  width: 90%;
-  border-radius: 5px;
-  box-shadow: 0 0 20px; }
-
-.keyboardPic {
-  width: 100%;
-  box-shadow: 0 0 20px; }
 
 .my-image {
   width: 75px;
@@ -261,6 +230,24 @@ body {
       float: none;
       margin-left: 20px; } }
 
+.alert {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  text-align: center; }
+
+.alert.alert-success {
+  background-color: #66cc99; }
+
+.alert.alert-danger {
+  background-color: #66cc99; }
+
+.type-writter-text {
+  overflow: hidden;
+  border-right: 0.15em solid #000000;
+  letter-spacing: .10em;
+  animation: typing 5.5s, blink-caret .75s infinite; }
+
 .showcase-text h1 {
   opacity: 0;
   animation-name: fadeIn;
@@ -283,5 +270,29 @@ body {
     border-color: transparent; }
   50% {
     border-color: #586075; } }
+.livePicture {
+  width: 235px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px; }
+
+@media screen and (max-width: 992px) {
+  .livePicture {
+    text-align: center;
+    margin-top: 20px; } }
+.devicon {
+  font-size: 90px;
+  padding: 0 15px 0 15px; }
+  @media screen and (max-width: 768px) {
+    .devicon {
+      padding-bottom: 15%; } }
+
+.pokemonPic, .ztechPic, .meteorPic {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px; }
+
+.keyboardPic {
+  width: 100%;
+  box-shadow: 0 0 20px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -10,6 +10,7 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);  
 try {
 
+
     if (isset($_POST['submit']))
       $firstName = htmlspecialchars($_POST['firstName']);
       $lastName = htmlspecialchars($_POST['lastName']);

@@ -4,12 +4,6 @@
 const hambugerMenu = document.querySelector('.fa.fa-bars.unRotate90');
     
 //forms
-const  fName = document.querySelector('#first-name');
-       lName = document.querySelector('#last-name');
-       email = document.querySelector('#email');
-       message = document.querySelector('#message');
-       subBtn = document.querySelector('#sub-form-btn');
-       contactForm = document.querySelector('#contact-form');
 
 // html page sections
 const showCase = document.querySelector('.show-case');
@@ -81,34 +75,6 @@ function rotateHambugerMenu(){
         hambugerMenu.className = "fa fa-bars unRotate90";
     }  
 }
-// client side form validation
-
-function formValidation(e){
-
-    
-    if (fName.value == "") {
-        document.querySelector('.err.fName').innerHTML = "Please enter a vaild first name";
-    } 
-    if (lName.value == "") {
-        document.querySelector('.err.lName').innerHTML = "Please enter a vaild last name";
-    } 
-    if (email.value == "") {
-        document.querySelector('.err.email').innerHTML = "Please enter a vaild email address";
-    } 
-
-    if (message.value == "") {
-        document.querySelector('.err.message').innerHTML = "Please enter a message";
-    }
-        
-e.preventDefault();   
-}
-
-// make alert disapear
-
-const alert =  document.getElementById('alertMessage');
-window.onload = setTimeout( function() {
-        alert.remove();
-  }, 8000);
 
 
 

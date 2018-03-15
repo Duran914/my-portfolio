@@ -45,7 +45,10 @@ include "sendmail.php";
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div id='alertMessage' class= "alert <?php echo $msgClass; ?>">
+          <div id='alertMessage' class= "alert <?php echo $msgClass;?> alert-dismissible fade show">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
           <?php echo $msg; ?>
           </div>
         </div>
@@ -143,7 +146,7 @@ include "sendmail.php";
                       <p><strong>ABOUT:</strong><br> 
                         Z-Tech is a personal project based on a fictitious web design company. Front-End only.</p>
                       <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
-                      <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Meteor">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                      <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/School-Projects/tree/master/Z-Tech">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -159,7 +162,7 @@ include "sendmail.php";
                     <p><strong>ABOUT:</strong><br> 
                       Meteor is personal project for a fictitious photography company. Front-End only.</p>
                     <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
-                    <a class="btn btn-primary btn-dark-grey github-btn" href="#">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Meteor">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>
@@ -217,8 +220,6 @@ include "sendmail.php";
              </div>
             </div>
           </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

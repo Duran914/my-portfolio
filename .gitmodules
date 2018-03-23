@@ -1,0 +1,9 @@
+[submodule "projects/Level-Up"]
+	path = projects/Level-Up
+	url = https://github.com/Duran914/Level-Up.git
+[submodule "projects/PokeDex"]
+	path = projects/PokeDex
+	url = https://github.com/Duran914/PokeDex.git
+[submodule "projects/Meteor"]
+	path = projects/Meteor
+	url = https://github.com/Duran914/Meteor.git

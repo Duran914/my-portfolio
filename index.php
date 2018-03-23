@@ -72,21 +72,21 @@ include "sendmail.php";
           <div class="container" id="aboutContainer">
           <section class="about-me mt-3">
           <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9">
+              <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9">
               <div class="section-header about">ABOUT ME</div>
                 <div class="about-us-content mt-4">
                     <div class="card main-card">
                         <div class="card-body">
-                  <p>Hello, Im Johnny and im a Front-End web developer from Oxnard, CA.  
+                  <p>Hello, Im Johnny and im a Front-End developer from Ventura County, CA.  
                     I am currently in my senior year at Cal State Northridge majoring in
-                     Computer Information Technology.
-                    I specialize in creating dynamic web sites and web apps.
+                    Computer Information Technology. I have a passion for creating dynamic 
+                    web sites/applications and all things web related. 
                   </p>
                   </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="livePic mt-5 mb-5">
                 <img class="livePicture" src="assets/IMG/livePic.jpg" alt="">
                 </div>
@@ -103,14 +103,14 @@ include "sendmail.php";
               <div class="card main-card mt-5 mb-5">
                 <div class="card-body">
               <div class="stack-icons">
-                <i class="devicon devicon-html5-plain-wordmark"></i>
-                <i class="devicon devicon-css3-plain-wordmark"></i>
-                <i class="devicon devicon-javascript-plain"></i>
-                <i class="devicon devicon-bootstrap-plain-wordmark"></i>
-                <i class="devicon devicon-sass-original"></i>
-                <i class="devicon devicon-php-plain"></i>
-                <i class="devicon devicon-mysql-plain-wordmark"></i>
-                <i class="devicon devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon devicon-javascript-plain colored"></i>
+                <i class="devicon devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="devicon devicon-sass-original colored"></i>
+                <i class="devicon devicon-php-plain colored"></i>
+                <i class="devicon devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon devicon-amazonwebservices-original colored"></i>
                 </div>
                 </div>
               </div>
@@ -125,43 +125,44 @@ include "sendmail.php";
               <div class="section-header myWork">MY WORK</div>
               </div>
               <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div class="project1 mt-5 mb-5">
+              <div class="project1 mt-4 mb-4">
                 <div class="card main-card">
                   <div class="card-body">
                       <div class="section-sm-header">PokeDex</div>
                     <img class="pokemonPic mt-4 mb-4" src="assets/IMG/pokedex.png" alt="">
-                    <p><strong>ABOUT:</strong><br> A pokedex which lists Genereation 1 pokemon. Displays their attributes and statistics.</p>
-                    <a class="btn btn-primary btn-dark-grey" href="">See App</a>
+                    <p><strong>ABOUT:</strong><br> 
+                      A pokedex which lists Genereation 1 pokemon. Displays their attributes and statistics.</p>
+                    <a class="btn btn-primary btn-dark-grey" href="projects/PokeDex">See App</a>
                     <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/PokeDex">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <div class="project1 mt-5 mb-5">
+                <div class="project1 mt-4 mb-4">
                   <div class="card main-card">
                     <div class="card-body">
-                        <div class="section-sm-header">Z-Tech</div>
-                      <img class="ztechPic mt-4 mb-4" src="assets/IMG/ZTech.png" alt="">
+                        <div class="section-sm-header">Level</div>
+                      <img class="levelPic mt-4 mb-4" src="assets/IMG/levelUp.png" alt="">
                       <p><strong>ABOUT:</strong><br> 
-                        Z-Tech is a personal project based on a fictitious web design company. Front-End only.</p>
-                      <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
-                      <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/School-Projects/tree/master/Z-Tech">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                        Level is a project based on a fictitious Travel company. Front-End only.</p>
+                      <a class="btn btn-primary btn-dark-grey" href="projects/Level-Up">See App</a>
+                      <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Level-Up">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div class="project1 mt-5 mb-5">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 m-auto">
+              <div class="project1 mt-4 mb-4">
                 <div class="card main-card">
                   <div class="card-body">
                       <div class="section-sm-header">Meteor</div>
                     <img class="meteorPic mt-4 mb-4" src="assets/IMG/meteor.png" alt="">
                     <p><strong>ABOUT:</strong><br> 
-                      Meteor is personal project for a fictitious photography company. Front-End only.</p>
-                    <a class="btn btn-primary btn-dark-grey" href="#">See App</a>
+                      Meteor is project based on a fictitious photography company. Front-End only.</p>
+                    <a class="btn btn-primary btn-dark-grey" href="projects/Meteor">See App</a>
                     <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Meteor">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -209,7 +210,7 @@ include "sendmail.php";
         <footer class="foot bg-dark mt-5">
             <div class="row">
              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <div class="footer-text">Copyright © 2017 Johnny Duran <img src="assets/IMG/me-white.png" class="my-image-sm" alt=""></div>
+              <div class="footer-text">Copyright © 2018 Johnny Duran <img src="assets/IMG/me-white.png" class="my-image-sm" alt=""></div>
              </div>
              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
              <div class="social-icons">

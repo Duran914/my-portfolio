@@ -88,7 +88,7 @@ include "sendmail.php";
               </div>
               <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="livePic mt-5 mb-5">
-                <img class="livePicture" src="assets/IMG/livePic.jpg" alt="">
+                <img class="livePicture" src="assets/IMG/livePic.jpeg" alt="">
                 </div>
                 </div>
           </div>

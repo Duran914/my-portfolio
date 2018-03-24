@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Kreon");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Montserrat");
+html {
+  min-height: 100%;
+  position: relative; }
+
 body {
   font-family: "Montserrat", "Inconsolata";
   background-color: #586075;
   margin: 0;
+  margin-bottom: 60px;
   padding: 0; }
 
 .form-control {
@@ -170,8 +175,13 @@ body {
 .foot {
   color: #CDD4D9;
   padding: 15px;
-  bottom: 0;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  height: 60px; }
+  @media screen and (max-width: 768px) {
+    .foot {
+      position: absolute;
+      height: 100px; } }
 
 .foot .social-icons {
   float: right; }
@@ -283,7 +293,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 20px; }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .livePicture {
     text-align: center;
     margin-top: 20px; } }

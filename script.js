@@ -55,7 +55,7 @@ function scrollToSection(goto){
     else if(link == navAbout){        
         aboutMe.scrollIntoView(
         {behavior: "smooth",
-        block: "start"});
+        block: "start"});     
     }
     else if(link == navContact){        
         contactMe.scrollIntoView(
@@ -74,6 +74,4 @@ function rotateHambugerMenu(){
         hambugerMenu.className = "fa fa-bars unRotate90";
     }  
 }
-
-
 

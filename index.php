@@ -60,8 +60,8 @@ include "sendmail.php";
           <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div class="showcase-text">
-                  <h1> &ltWeb-Developer&gt<br> 
-                   <span class="type-writter-text"></span> <br>
+                  <h1> &ltWeb-Developer&gt<br>
+                   <span class="type-writter-text"></span><br>
                    &lt/Web-Developer&gt</h1>
                 </div>
                 </div>
@@ -77,10 +77,10 @@ include "sendmail.php";
                 <div class="about-us-content mt-4">
                     <div class="card main-card">
                         <div class="card-body">
-                  <p>Hello, Im Johnny and im a Front-End developer from Ventura County, CA.  
+                  <p>Hello, my name is Johnny Duran and i'm a front-end web developer from Ventura County, CA.  
                     I am currently in my senior year at Cal State Northridge majoring in
-                    Computer Information Technology. I have a passion for creating dynamic 
-                    web sites/applications and all things web related. 
+                    Computer Information Technology. My primary focus is creating front-end websties and web 
+                    applications. I have a passion for learning new web technologies and playing music.  
                   </p>
                   </div>
                   </div>

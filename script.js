@@ -21,13 +21,12 @@ const navbar = document.querySelector('#navBar');
 
 // Event listeners
 hambugerMenu.addEventListener('click', rotateHambugerMenu);
-// contactForm.addEventListener('submit', formValidation);
 navbar.addEventListener('click', scrollToSection);
 
 
 // Typewritter effect for showcase
 let typeWriteVar = 0;
-let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces'; /* Welcome message */
+let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces'
 
 window.onload = setTimeout( function typeWriter() {
     

@@ -16,27 +16,41 @@ body
     color: $grey
 
 .show-case
-    background: url("../assets/IMG/keyboard.jpeg")
-    padding-bottom: 350px
+    background: url("../assets/IMG/keyboard.jpeg")no-repeat
+    // padding-bottom: 550px
+    padding-bottom: 50%
     background-size: cover
-
     background-attachment: fixed
     background-position: center
-    background-repeat: no-repeat
+    position: relative
 
     @media screen and (max-width:$lg-break-point)
-        padding-bottom: 200px
+        // padding-bottom: 75%
+        padding-bottom: 550px
+    @media screen and (max-width:$md-break-point)
+        // padding-bottom: 80%
+        padding-bottom: 560px
     @media screen and (max-width:$sm-break-point)
-        padding-bottom: 50%
+        // padding-bottom: 100%
+        padding-bottom: 580px
+        @media screen and (max-width:$xs-break-point)
+        // padding-bottom: 140%
+        padding-bottom: 600px
 
 .showcase-text
+    position: absolute
+    top: 0
+    bottom: 0 
+    right: 0
+    left: 0
     margin: 20px
-    text-align: center!important
-    margin-top: 170px
+    margin-top: 10%
     @media screen and (max-width:$sm-break-point)
-        margin-top: 120px 
+        margin-top: 20% 
+    // @media screen and (max-width:$xs-break-point)
+    //     margin-top: 10% 
     h1
-        margin: 0 5%
+        margin: 0 10%
         border-radius: 5px 
         font-weight: bolder
         color: #e6e6e6
@@ -45,7 +59,7 @@ body
             margin: 0   
         @media screen and (max-width:$sm-break-point)
             font-size: 35px
-    
+
 .section-header
     font-size: 30px
     margin-left: 20px 

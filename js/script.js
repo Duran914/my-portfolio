@@ -1,4 +1,3 @@
-//UL variables
 
 // hamburger menu
 const hambugerMenu = document.querySelector('.fa.fa-bars.unRotate90');

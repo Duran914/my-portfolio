@@ -37,7 +37,9 @@ body {
       padding-bottom: 560px; } }
   @media screen and (max-width: 576px) {
     .show-case {
-      padding-bottom: 580px;
+      padding-bottom: 580px; } }
+  @media screen and (max-width: 450px) {
+    .show-case {
       padding-bottom: 600px; } }
 
 .showcase-text {
@@ -48,6 +50,10 @@ body {
   left: 0;
   margin: 20px;
   margin-top: 10%; }
+  @media screen and (max-width: 992px) {
+    .showcase-text {
+      margin: 30px;
+      margin-top: 10%; } }
   @media screen and (max-width: 576px) {
     .showcase-text {
       margin-top: 20%; } }
@@ -171,6 +177,9 @@ body {
   background-color: #99A1AE;
   border-radius: none;
   box-shadow: 0px 0px 20px; }
+  @media screen and (max-width: 450px) {
+    .card-body {
+      padding: 10px; } }
 
 .foot {
   color: #CDD4D9;
@@ -299,10 +308,10 @@ body {
     margin-top: 20px; } }
 .devicon {
   font-size: 90px;
-  padding: 0 5px 0 5px; }
-  @media screen and (max-width: 768px) {
+  padding: 0 10px; }
+  @media screen and (max-width: 576px) {
     .devicon {
-      padding-bottom: 15%; } }
+      padding: 0 5px; } }
 
 .pokemonPic, .levelPic, .meteorPic {
   width: 90%;

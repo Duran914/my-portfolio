@@ -20,8 +20,15 @@ include "sendmail.php";
 <div class="container">
         <section class='contact mt-5 mb-5'>
           <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <div class="section-header contactMe mb-3 ">CONTACT ME</div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="me-sm-img">
+                  <img class="smlivePicture" src="assets/IMG/me-white.png" alt="">
+                </div>
+                </div>
+            </div>
                   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="contact-form">
                       <div class="row">
                       <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -49,7 +56,48 @@ include "sendmail.php";
                       </div>
                     </form>
             </div>
-          </div>
         </section>
       </div>
+        <div class="container">
+         <section class="otherContact">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="section-header mb-5">CONNECT WITH ME</div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+             <div class="contact-social">
+              <div class="row">
+                   <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                      <div class="card main-card">
+                          <div class="card-body">
+                      <a class="contactSocialLink" href="https://github.com/Duran914"><i class="fa fa-github fa-4x" aria-hidden="true"></i><br>
+                      <span><h4>Github</h4></span>
+                    </a>
+                   </div>
+                  </div>
+                </div> 
+                   <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                      <div class="card main-card">
+                          <div class="card-body">
+                      <a class="contactSocialLink" href="https://www.linkedin.com/in/jonathan-duran-166037105/"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i><br>
+                      <span><h4>Linked-In</h4></span>
+                    </a>
+                   </div>
+                  </div>
+                </div> 
+                   <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                      <div class="card main-card">
+                          <div class="card-body">
+                      <a class="contactSocialLink" href="https://www.instagram.com/j_duranz_/"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i><br>
+                        <span><h4>Instagram</h4></span>
+                      </a>
+                    </div>
+                  </div> 
+                   </div>
+                 </div>
+               </div>
+             </div> 
+            </section>
+            </div>
 <?php include "inc/footer.php"?>

@@ -87,8 +87,24 @@ body {
     float: none;
     text-align: center; } }
 .about-us-content {
-  line-height: 40px;
+  line-height: 60px;
   font-size: 20px; }
+  @media screen and (max-width: 992px) {
+    .about-us-content {
+      line-height: 40px; } }
+
+.contact-social i.fa {
+  color: #586075;
+  transition-duration: 0.4s; }
+  .contact-social i.fa:hover {
+    color: #373c49; }
+
+.contact-social .contactSocialLink {
+  text-decoration: none;
+  color: #000000; }
+
+.stack-icons i {
+  margin: 25px; }
 
 .my-image {
   width: 75px;
@@ -180,6 +196,9 @@ body {
   @media screen and (max-width: 450px) {
     .card-body {
       padding: 10px; } }
+
+.card-body.tech-icons {
+  padding: 20px 0; }
 
 .foot {
   color: #CDD4D9;
@@ -297,21 +316,44 @@ body {
     border-color: transparent; }
   50% {
     border-color: #586075; } }
-.livePicture {
+.csunPicture {
   width: 235px;
-  border-radius: 5px;
-  box-shadow: 0 0 20px; }
+  margin-top: -25px; }
+  @media screen and (max-width: 992px) {
+    .csunPicture {
+      margin-top: -60px;
+      margin-bottom: -40px; } }
+  @media screen and (max-width: 768px) {
+    .csunPicture {
+      width: 150px; } }
 
+.smlivePicture {
+  width: 100px;
+  float: right; }
+  @media screen and (max-width: 576px) {
+    .smlivePicture {
+      float: none;
+      margin: 0 auto; } }
+
+@media screen and (max-width: 768px) {
+  .me-sm-img {
+    text-align: center; } }
 @media screen and (max-width: 1200px) {
   .livePicture {
     text-align: center;
     margin-top: 20px; } }
 .devicon {
-  font-size: 90px;
-  padding: 0 10px; }
+  font-size: 80px;
+  margin: 0; }
   @media screen and (max-width: 576px) {
     .devicon {
       padding: 0 5px; } }
+
+[class*=" devicon-"], [class^=devicon-] {
+  line-height: 1.2; }
+
+.devicon-html5-plain-wordmark.colored, .devicon-html5-plain.colored {
+  margin-bottom: 20px; }
 
 .pokemonPic, .levelPic, .meteorPic {
   width: 90%;

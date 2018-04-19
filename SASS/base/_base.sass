@@ -79,9 +79,22 @@ body
         text-align: center
 
 .about-us-content
-    line-height: 40px
+    line-height: 60px
     font-size: 20px
+    @media screen and (max-width:$lg-break-point)
+        line-height: 40px
 
+.contact-social i.fa
+    color: $dark-grey
+    transition-duration: .4s
+    &:hover
+        color: darken($dark-grey, 15%)
 
+.contact-social .contactSocialLink   
+    text-decoration: none
+    color: $black
+
+.stack-icons i 
+    margin: 25px
     
 

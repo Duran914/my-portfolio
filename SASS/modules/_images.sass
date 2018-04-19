@@ -1,17 +1,39 @@
-.livePicture
+.csunPicture
     width: 235px
-    border-radius: 5px
-    box-shadow: 0 0 20px
+    margin-top: -25px
+    @media screen and (max-width:$lg-break-point)
+        margin-top: -60px
+        margin-bottom: -40px
+    @media screen and (max-width:$md-break-point)
+        width: 150px
+
+.smlivePicture
+    width: 100px
+    float: right
+    @media screen and (max-width:$sm-break-point)
+        float: none
+        margin:  0 auto
+
+@media screen and (max-width:$md-break-point)
+    .me-sm-img
+        text-align: center
 @media screen and (max-width:$xl-break-point)
     .livePicture
         text-align: center
         margin-top: 20px
         
 .devicon 
-    font-size: 90px
-    padding: 0 10px
+    font-size: 80px
+    margin: 0
     @media screen and (max-width:$sm-break-point)
         padding: 0 5px
+
+[class*=" devicon-"], [class^=devicon-]
+    line-height: 1.2
+
+.devicon-html5-plain-wordmark.colored, .devicon-html5-plain.colored
+    margin-bottom: 20px
+
 
 .pokemonPic, .levelPic, .meteorPic
     width: 90%

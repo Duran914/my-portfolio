@@ -289,7 +289,6 @@ body {
   background-color: #66cc99; }
 
 .type-writter-text {
-  overflow: hidden;
   border-right: 0.15em solid #000000;
   letter-spacing: .10em;
   animation: typing 5.5s, blink-caret .75s infinite; }

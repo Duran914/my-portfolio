@@ -1,8 +1,6 @@
 
 // hamburger menu
 const hambugerMenu = document.querySelector('.fa.fa-bars.unRotate90');
-    
-//forms
 
 // html page sections
 const showCase = document.querySelector('.show-case');
@@ -24,12 +22,12 @@ navbar.addEventListener('click', scrollToSection);
 
 
 // Typewritter effect for showcase
-let typeWriteVar = 0;
-let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces'
+let typeWriteVar = '';
+let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces';
 
 window.onload = setTimeout( function typeWriter() {
     
-  if (typeWriteVar < welcomeMessage.length) {
+  if (typeWriteVar != welcomeMessage.length) {
     document.querySelector('.type-writter-text').innerHTML += welcomeMessage.charAt(typeWriteVar);
     typeWriteVar++;
     setTimeout(typeWriter, 100);

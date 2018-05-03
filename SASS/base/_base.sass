@@ -84,17 +84,25 @@ body
     @media screen and (max-width:$lg-break-point)
         line-height: 40px
 
-.contact-social i.fa
+.contact-social .contactSocialLink i.fa
     color: $dark-grey
     transition-duration: .4s
-    &:hover
-        color: darken($dark-grey, 15%)
+
+
 
 .contact-social .contactSocialLink   
     text-decoration: none
     color: $black
+    &:hover
+        i.fa
+            color: darken($dark-grey, 15%)
 
 .stack-icons i 
     margin: 25px
+
+// character counter color
+.characterCount
+    color: $light-grey
+    float: right
     
 

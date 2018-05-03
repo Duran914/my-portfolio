@@ -9,7 +9,7 @@
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div class="project1 mt-4 mb-4">
-                <div class="card main-card">
+                <div class="card main-card animated fadeInLeft">
                   <div class="card-body">
                       <div class="section-sm-header"><h4>PokeDex</h4></div>
                     <img class="pokemonPic mt-4 mb-4" src="assets/IMG/pokedex.png" alt="">
@@ -26,7 +26,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="project1 mt-4 mb-4">
-                  <div class="card main-card">
+                  <div class="card main-card animated fadeInRight">
                     <div class="card-body">
                         <div class="section-sm-header"><h4>Level</h4></div>
                       <img class="levelPic mt-4 mb-4" src="assets/IMG/levelUp.png" alt="">

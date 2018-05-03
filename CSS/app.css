@@ -93,18 +93,22 @@ body {
     .about-us-content {
       line-height: 40px; } }
 
-.contact-social i.fa {
+.contact-social .contactSocialLink i.fa {
   color: #586075;
   transition-duration: 0.4s; }
-  .contact-social i.fa:hover {
-    color: #373c49; }
 
 .contact-social .contactSocialLink {
   text-decoration: none;
   color: #000000; }
+  .contact-social .contactSocialLink:hover i.fa {
+    color: #373c49; }
 
 .stack-icons i {
   margin: 25px; }
+
+.characterCount {
+  color: #CDD4D9;
+  float: right; }
 
 .my-image {
   width: 75px;
@@ -242,7 +246,7 @@ body {
   background-color: #99A1AE;
   color: #ffffff;
   float: right;
-  margin-top: 40px;
+  margin-top: 30px;
   border-color: #99A1AE; }
   .my-btn:hover {
     background-color: #646d7d;
@@ -286,7 +290,7 @@ body {
   background-color: #66cc99; }
 
 .alert.alert-danger {
-  background-color: #66cc99; }
+  background-color: #ff5050; }
 
 .type-writter-text {
   border-right: 0.15em solid #000000;
@@ -304,11 +308,6 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {

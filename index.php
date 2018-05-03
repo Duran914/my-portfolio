@@ -33,7 +33,7 @@
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
                       <div class="livePic mt-5 mb-5">
-                      <img class="csunPicture" src="assets/IMG/csun.png" alt="">
+                      <img class="csunPicture animated infinite pulse" src="assets/IMG/csun.png" alt="">
                       </div>
                       </div>
                   </div>

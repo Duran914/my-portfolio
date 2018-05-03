@@ -72,3 +72,79 @@ function rotateHambugerMenu(){
     }  
 }
 
+// Error validation 
+document.querySelector('#first-name').addEventListener('keyup', validateFname);
+document.querySelector('#last-name').addEventListener('keyup', validateLname);
+document.querySelector('#email').addEventListener('keyup', validateEmail);
+document.querySelector('#message').addEventListener('keyup', validateMessage);
+
+function validateFname(){
+    const fName = document.querySelector('#first-name');
+    const RegEx = /^[a-zA-Z]{2,20}$/;
+
+    if (!RegEx.test(fName.value)) {
+        fName.classList.add('is-invalid');
+        fName.style.border = '2px solid #ff5050';
+        document.querySelector('.err.fName').innerHTML = 'Please enter your first name';
+    } else {
+        fName.classList.remove('is-invalid');
+        fName.style.border = '';
+        document.querySelector('.err.fName').innerHTML = '';
+    }
+}
+
+function validateLname(){
+    const lName = document.querySelector('#last-name');
+    const RegEx = /^[a-zA-Z]{2,20}$/;
+
+    if (!RegEx.test(lName.value)) {
+        lName.classList.add('is-invalid');
+        lName.style.border = '2px solid #ff5050';
+        document.querySelector('.err.lName').innerHTML = 'Please enter your last name';
+    } else {
+        lName.classList.remove('is-invalid');
+        lName.style.border = '';
+        document.querySelector('.err.lName').innerHTML = '';
+    }
+}
+
+function validateEmail(){
+    const email = document.querySelector('#email');
+    const RegEx = /^([a-zA-Z0-9\-\./com]+)@([a-zA-Z0-9\-\./com]+)\.([a-zA-Z]{2,5})$/;
+
+    if (!RegEx.test(email.value)) {
+        email.classList.add('is-invalid');
+        email.style.border = '2px solid #ff5050';
+        document.querySelector('.err.email').innerHTML = 'Please enter a valid email';
+    } else {
+        email.classList.remove('is-invalid');
+        email.style.border = '';
+        document.querySelector('.err.email').innerHTML = '';
+    }
+}
+
+function validateMessage(){
+    const message = document.querySelector('#message');
+    const RegEx = /^[a-zA-Z0-9\.\,\$\-/ )]{10,200}$/;
+    const characterCount = message.value.length;
+    if (!RegEx.test(message.value)) {
+        message.classList.add('is-invalid');
+        message.style.border = '2px solid #ff5050';
+        if ( message.value.length < 11) {
+            document.querySelector('.err.message').innerHTML = 'Please tell me more!';
+        }
+        else{
+        document.querySelector('.err.message').innerHTML = 'Only letters, numbers and ( . , $)';
+        }
+        
+    } else {
+        message.classList.remove('is-invalid');
+        message.style.border = '';
+        document.querySelector('.err.message').innerHTML = '';
+    }
+    document.querySelector('.characterCount').innerHTML = `${characterCount}/200`
+}
+
+function validateForm(){
+
+}

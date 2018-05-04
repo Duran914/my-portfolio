@@ -97,11 +97,20 @@ body {
   color: #586075;
   transition-duration: 0.4s; }
 
+.contact-social .conntectSocialText {
+  color: #586075;
+  transition-duration: 0.4s; }
+
 .contact-social .contactSocialLink {
   text-decoration: none;
   color: #000000; }
-  .contact-social .contactSocialLink:hover i.fa {
+  .contact-social .contactSocialLink:hover .card-body {
+    background-color: #858f9e; }
+  .contact-social .contactSocialLink:hover i.fa, .contact-social .contactSocialLink:hover .conntectSocialText {
     color: #373c49; }
+
+.contactSocialLink .card-body {
+  box-shadow: 0px 0px 5px; }
 
 .stack-icons i {
   margin: 25px; }
@@ -166,6 +175,9 @@ body {
       border-bottom: 4px solid #586075; }
 
 @media screen and (max-width: 992px) {
+  .navbar ul.navbar-nav {
+    padding-bottom: 10px; }
+
   .navbar-nav li {
     text-align: center; }
     .navbar-nav li a {
@@ -189,14 +201,18 @@ body {
   padding: 0;
   overflow: hidden; }
 
+.card {
+  border: none !important; }
+
 .card .main-card {
   float: left; }
 
 .card-body {
   text-align: center;
   background-color: #99A1AE;
-  border-radius: none;
-  box-shadow: 0px 0px 20px; }
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px;
+  transition-duration: 0.4s; }
   @media screen and (max-width: 450px) {
     .card-body {
       padding: 10px; } }

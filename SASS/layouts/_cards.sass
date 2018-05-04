@@ -1,15 +1,18 @@
 // card for Main heading
+.card
+    border: none !important
+
 .card .main-card
     float: left
     
 .card-body
     text-align: center
     background-color: $grey
-    border-radius: none
-    box-shadow: 0px 0px 20px
+    border-radius: 2px
+    box-shadow: 0px 0px 8px
+    transition-duration: .4s
     @media screen and (max-width:$xs-break-point)
         padding: 10px
-
 
 .card-body.tech-icons 
     padding: 20px 0

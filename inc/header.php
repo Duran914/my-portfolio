@@ -17,7 +17,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="index.php"><img src="assets/IMG/me.png" class="my-image" alt=""><span class="navbar-name">Johnny Duran</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-            <span class="toggle"><i id="menuBars" class="fa fa-bars unRotate90"></i></span>
+            <span class="toggle"><i id="menuBars" class="fa fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul id="navBar" class="navbar-nav justify-content-center">

@@ -29,7 +29,7 @@ include "sendmail.php";
         </div>
       </div>
     </div>
-    <form method="post" onsubmit="validateForm()" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" id="contact-form">
+    <form method="post" id="validationForm" onsubmit="validateForm(event)" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" id="contact-form">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div class="form-group">
@@ -46,15 +46,15 @@ include "sendmail.php";
           <div class="form-group">
             <label for="email">Email Address:</label>
             <span class="err email"></span>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div class="form-group">
             <label for="message">Enter a Message</label>
             <span class="err message"></span>
-            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            <div class="characterCount"></div><br>
+            <textarea class="form-control" id="message" maxlength='250' name="message" rows="4"></textarea>
+            <div class="characterCount">0/200</div><br>
           </div>
           <input type="submit" id="sub-form-btn" class="btn my-btn" value="Send">
         </div>
@@ -80,7 +80,7 @@ include "sendmail.php";
                           <i class="fa fa-github fa-4x" aria-hidden="true"></i>
                           <br>
                           <span>
-                            <h4>Github</h4>
+                            <h4 class="conntectSocialText">Github</h4>
                           </span>
         
                         </div>
@@ -94,7 +94,7 @@ include "sendmail.php";
                           <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
                           <br>
                           <span>
-                            <h4>Linked-In</h4>
+                            <h4 class="conntectSocialText">Linked-In</h4>
                           </span>
                   
                         </div>
@@ -108,7 +108,7 @@ include "sendmail.php";
                           <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
                           <br>
                           <span>
-                            <h4>Instagram</h4>
+                            <h4 class="conntectSocialText">Instagram</h4>
                           </span>
                   
                         </div>

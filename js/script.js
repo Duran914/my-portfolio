@@ -1,6 +1,8 @@
-
+ // Variables
 // hamburger menu
-const hambugerMenu = document.querySelector('.fa.fa-bars.unRotate90');
+const hambugerMenu = document.querySelector('.fa.fa-bars');
+      navBarToggler = document.querySelector('.navbar-toggler');
+      navBarDropDown = document.querySelector('#navbarNavDropdown');
 
 // html page sections
 const showCase = document.querySelector('.show-case');
@@ -15,13 +17,20 @@ const navbar = document.querySelector('#navBar');
       navAbout = document.querySelector('#about');
       navContact = document.querySelector('#contact');
 
+// Form submit button on contact page
+const formSubmitBtn = document.querySelector('#sub-form-btn');
+
 
 // Event listeners
-hambugerMenu.addEventListener('click', rotateHambugerMenu);
+navBarToggler.addEventListener('click', rotateHambugerMenu);
 navbar.addEventListener('click', scrollToSection);
 
 
-// Typewritter effect for showcase
+
+/**************************************
+Typewritter effect for showcase
+***************************************/
+
 let typeWriteVar = '';
 let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces';
 
@@ -34,7 +43,11 @@ window.onload = setTimeout( function typeWriter() {
   }
 }, 1500);
  
-// scrolling navbar-links function
+
+/**************************************
+Scrolling navbar-links function
+***************************************/
+
 function scrollToSection(goto){
     let link = goto.target;
     console.log(link);
@@ -61,25 +74,73 @@ function scrollToSection(goto){
     }
 }
 
+/**************************************
+Rotate menu funtion
+***************************************/
 
-// menu rotate funtion
 function rotateHambugerMenu(){
-    if(hambugerMenu.className === "fa fa-bars unRotate90"){
-        hambugerMenu.className = "fa fa-bars rotate90";
+    if(!navBarDropDown.classList.contains('show')){
+        hambugerMenu.classList.add('rotate90');
+        hambugerMenu.classList.remove('unRotate90');
     }
     else{
-        hambugerMenu.className = "fa fa-bars unRotate90";
+        hambugerMenu.classList.add('unRotate90');
+        hambugerMenu.classList.remove('rotate90');
     }  
 }
 
-// Error validation 
+/**************************************
+Error validation w/ RegEx
+***************************************/
+
+//input field eventlisteners
+
+// Used to avoid errors for event listeners when not on current page for event listening
+    // temporary
+try {
+    
 document.querySelector('#first-name').addEventListener('keyup', validateFname);
 document.querySelector('#last-name').addEventListener('keyup', validateLname);
 document.querySelector('#email').addEventListener('keyup', validateEmail);
 document.querySelector('#message').addEventListener('keyup', validateMessage);
 
+} 
+catch (error) {
+    console.log("Event listener error ignored!");
+}
+
+
+// input fields vars
+const fName = document.querySelector('#first-name');
+      lName = document.querySelector('#last-name');
+      email = document.querySelector('#email');
+      message = document.querySelector('#message');
+
+// validates form before running php script 
+function validateForm(event){
+    
+    validateFname();
+     validateLname();
+      validateEmail();
+       validateMessage();
+
+    if (fName.classList.contains('is-invalid') || fName.value === '' ||
+       lName.classList.contains('is-invalid') || lName.value === '' ||
+       email.classList.contains('is-invalid') || email.value === '' ||
+       message.classList.contains('is-invalid') || message.value === '') {
+        event.preventDefault(); 
+         formSubmitBtn.classList.add('animated', 'wobble');
+          setTimeout(reRunSubmit, 1000);
+       }
+}
+
+function reRunSubmit(){
+   formSubmitBtn.classList.remove('animated', 'wobble');
+  };
+
+// validates first name
 function validateFname(){
-    const fName = document.querySelector('#first-name');
+    
     const RegEx = /^[a-zA-Z]{2,20}$/;
 
     if (!RegEx.test(fName.value)) {
@@ -93,8 +154,9 @@ function validateFname(){
     }
 }
 
+//validates last name
 function validateLname(){
-    const lName = document.querySelector('#last-name');
+
     const RegEx = /^[a-zA-Z]{2,20}$/;
 
     if (!RegEx.test(lName.value)) {
@@ -108,8 +170,9 @@ function validateLname(){
     }
 }
 
+// validates email address
 function validateEmail(){
-    const email = document.querySelector('#email');
+
     const RegEx = /^([a-zA-Z0-9\-\./com]+)@([a-zA-Z0-9\-\./com]+)\.([a-zA-Z]{2,5})$/;
 
     if (!RegEx.test(email.value)) {
@@ -123,14 +186,16 @@ function validateEmail(){
     }
 }
 
+// validates message
 function validateMessage(){
-    const message = document.querySelector('#message');
-    const RegEx = /^[a-zA-Z0-9\.\,\$\-/ )]{10,200}$/;
+
+    const characterCounter = document.querySelector('.characterCount');
+    const RegEx = /^[a-zA-Z0-9\.\,\$\-/ )]{20,250}$/;
     const characterCount = message.value.length;
     if (!RegEx.test(message.value)) {
         message.classList.add('is-invalid');
         message.style.border = '2px solid #ff5050';
-        if ( message.value.length < 11) {
+        if ( message.value.length < 20) {
             document.querySelector('.err.message').innerHTML = 'Please tell me more!';
         }
         else{
@@ -142,9 +207,22 @@ function validateMessage(){
         message.style.border = '';
         document.querySelector('.err.message').innerHTML = '';
     }
-    document.querySelector('.characterCount').innerHTML = `${characterCount}/200`
+
+    document.querySelector('.characterCount').innerHTML = `${characterCount}/250`
+    characterCounterColor(characterCount);
 }
 
-function validateForm(){
+// dynamically changes character counter color 0/250 depending on message length
+function characterCounterColor(characterCount){
 
+    if (characterCount === 250 ) {
+        document.querySelector('.characterCount').style.color = "#ff5050";
+    } 
+    else if (characterCount >= 240){
+        document.querySelector('.characterCount').style.color = "#FFC107";
+    }  
+    else{
+        document.querySelector('.characterCount').style.color = "#66cc99";
+    }
 }
+

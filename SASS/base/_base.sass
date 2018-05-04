@@ -88,14 +88,21 @@ body
     color: $dark-grey
     transition-duration: .4s
 
-
+.contact-social .conntectSocialText
+    color: $dark-grey
+    transition-duration: .4s
 
 .contact-social .contactSocialLink   
     text-decoration: none
     color: $black
     &:hover
-        i.fa
+        .card-body
+            background-color: darken($grey, 7%)
+        i.fa, .conntectSocialText
             color: darken($dark-grey, 15%)
+
+.contactSocialLink .card-body
+    box-shadow: 0px 0px 5px
 
 .stack-icons i 
     margin: 25px

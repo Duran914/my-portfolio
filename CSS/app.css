@@ -11,6 +11,11 @@ body {
   margin-bottom: 60px;
   padding: 0; }
 
+input[type="text"], textarea {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc; }
+
 .form-control {
   background-color: #CDD4D9; }
 
@@ -295,6 +300,10 @@ body {
     .err {
       float: none;
       margin-left: 20px; } }
+  @media screen and (max-width: 450px) {
+    .err {
+      display: block;
+      margin: auto; } }
 
 .alert {
   margin-bottom: 0;
@@ -330,6 +339,9 @@ body {
     border-color: transparent; }
   50% {
     border-color: #586075; } }
+.livePic .csunPicture {
+  animation-duration: 3s; }
+
 .csunPicture {
   width: 235px;
   margin-top: -25px; }

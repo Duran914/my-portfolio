@@ -96,7 +96,6 @@ Error validation w/ RegEx
 //input field eventlisteners
 
 // Used to avoid errors for event listeners when not on current page for event listening
-    // temporary
 try {
     
 document.querySelector('#first-name').addEventListener('keyup', validateFname);
@@ -106,7 +105,7 @@ document.querySelector('#message').addEventListener('keyup', validateMessage);
 
 } 
 catch (error) {
-    console.log("Event listener error ignored!");
+
 }
 
 
@@ -190,7 +189,7 @@ function validateEmail(){
 function validateMessage(){
 
     const characterCounter = document.querySelector('.characterCount');
-    const RegEx = /^[a-zA-Z0-9\.\,\$\-/ )]{20,250}$/;
+    const RegEx = /^[a-zA-Z0-9\.\,\$\-/]{20,250}$/;
     const characterCount = message.value.length;
     if (!RegEx.test(message.value)) {
         message.classList.add('is-invalid');
@@ -199,7 +198,7 @@ function validateMessage(){
             document.querySelector('.err.message').innerHTML = 'Please tell me more!';
         }
         else{
-        document.querySelector('.err.message').innerHTML = 'Only letters, numbers and ( . , $)';
+        document.querySelector('.err.message').innerHTML = 'Only letters, numbers and ( - . , $)';
         }
         
     } else {

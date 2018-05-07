@@ -124,6 +124,9 @@ input[type="text"], textarea {
   color: #CDD4D9;
   float: right; }
 
+.contact {
+  overflow: hidden; }
+
 .my-image {
   width: 75px;
   margin-left: 10px; }

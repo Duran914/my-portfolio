@@ -17,18 +17,20 @@ include "sendmail.php";
    </div>
 <?php endif; ?>
 
+<section class="contact mt-5 mb-5">
 <div class="container">
-  <section class='contact mt-5 mb-5'>
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
         <div class="section-header contactMe mb-3">CONTACT ME</div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-        <div class="me-sm-img animated fadeInRight">
-          <img class="smlivePicture" src="assets/IMG/me-white.png" alt="">
+        <div class="me-sm-img">
+          <img class="smlivePicture animated bounceInRight" src="assets/IMG/me-white.png" alt="">
         </div>
       </div>
     </div>
+  </div>
+  <div class="container mb-4">
     <form method="post" id="validationForm" onsubmit="validateForm(event)" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" id="contact-form">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -60,11 +62,11 @@ include "sendmail.php";
         </div>
       </div>
     </form>
-</div>
+  </div>
 </section>
 </div>
+      <section class="otherContact">
         <div class="container">
-          <section class="otherContact">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="section-header mb-5">CONNECT WITH ME</div>
@@ -110,7 +112,6 @@ include "sendmail.php";
                           <span>
                             <h4 class="conntectSocialText">Instagram</h4>
                           </span>
-                  
                         </div>
                       </div>
                     </a>

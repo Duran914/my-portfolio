@@ -140,7 +140,7 @@ function reRunSubmit(){
 // validates first name
 function validateFname(){
     
-    const RegEx = /^[a-zA-Z]{2,20}$/;
+    const RegEx = /^[a-zA-Z- ]{2,25}$/;
 
     if (!RegEx.test(fName.value)) {
         fName.classList.add('is-invalid');
@@ -156,7 +156,7 @@ function validateFname(){
 //validates last name
 function validateLname(){
 
-    const RegEx = /^[a-zA-Z]{2,20}$/;
+    const RegEx = /^[a-zA-Z- ]{2,25}$/;
 
     if (!RegEx.test(lName.value)) {
         lName.classList.add('is-invalid');
@@ -189,7 +189,7 @@ function validateEmail(){
 function validateMessage(){
 
     const characterCounter = document.querySelector('.characterCount');
-    const RegEx = /^[a-zA-Z0-9\.\,\$\-/]{20,250}$/;
+    const RegEx = /^[a-zA-Z0-9\.\,\$\-?! ]{20,250}$/;
     const characterCount = message.value.length;
     if (!RegEx.test(message.value)) {
         message.classList.add('is-invalid');
@@ -198,7 +198,7 @@ function validateMessage(){
             document.querySelector('.err.message').innerHTML = 'Please tell me more!';
         }
         else{
-        document.querySelector('.err.message').innerHTML = 'Only letters, numbers and ( - . , $)';
+        document.querySelector('.err.message').innerHTML = 'Only letters, numbers and punctuation.';
         }
         
     } else {
@@ -211,7 +211,7 @@ function validateMessage(){
     characterCounterColor(characterCount);
 }
 
-// dynamically changes character counter color 0/250 depending on message length
+//changes character counter color (0/250) depending on message length
 function characterCounterColor(characterCount){
 
     if (characterCount === 250 ) {

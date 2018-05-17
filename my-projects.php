@@ -18,8 +18,8 @@
                       Build with HTML5, CSS3, Javascript, and a local JSON database. 
                       Uses the javascript fetch API to retrieve data from the JSON database.<br>
                     </p>
-                    <a class="btn btn-primary btn-dark-grey" href="projects/PokeDex">See App</a>
-                    <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/PokeDex">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="btn btn-dark-grey" href="projects/PokeDex">See App</a>
+                    <a class="btn btn-dark-grey github-btn" href="https://github.com/Duran914/PokeDex">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>
@@ -34,8 +34,8 @@
                         Level is a landing page for a fictitious travel company.
                         Built with HTML5, CSS3, SASS and Javascript. Fully responsive for desktop and mobile
                         by utilizing CSS grids and media queries. </p><br>
-                      <a class="btn btn-primary btn-dark-grey" href="projects/Level-Up">See App</a>
-                      <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Level-Up">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                      <a class="btn btn-dark-grey" href="projects/Level-Up">See App</a>
+                      <a class="btn btn-dark-grey github-btn" href="https://github.com/Duran914/Level-Up">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -52,8 +52,8 @@
                       Meteor is a landing page for a fictitious photography company.
                       Built with HTML5, CSS3 and Javascript. Fully responsive for desktop and mobile
                       by utilizing CSS grids and media queries.</p>
-                    <a class="btn btn-primary btn-dark-grey" href="projects/Meteor">See App</a>
-                    <a class="btn btn-primary btn-dark-grey github-btn" href="https://github.com/Duran914/Meteor">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="btn btn-dark-grey" href="projects/Meteor">See App</a>
+                    <a class="btn btn-dark-grey github-btn" href="https://github.com/Duran914/Meteor">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>

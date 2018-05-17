@@ -189,7 +189,7 @@ function validateEmail(){
 function validateMessage(){
 
     const characterCounter = document.querySelector('.characterCount');
-    const RegEx = /^[a-zA-Z0-9\.\,\$\-?! ]{20,250}$/;
+    const RegEx = /^[a-zA-Z0-9\.\,\$\-?!' ]{20,250}$/;
     const characterCount = message.value.length;
     if (!RegEx.test(message.value)) {
         message.classList.add('is-invalid');

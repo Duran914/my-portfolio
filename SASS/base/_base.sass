@@ -10,12 +10,13 @@ body
     padding: 0 
 
 // disables bootstrap outline color for input fields
-input[type="text"], textarea 
-    outline: none
+button:focus, button:active, 
+a:focus, a:active,
+input:focus, input:active, 
+textarea:focus,textarea:active 
+    outline: none !important
     box-shadow: none !important
-    border: 1px solid #ccc
 
-    
 .form-control
     background-color: $light-grey
 

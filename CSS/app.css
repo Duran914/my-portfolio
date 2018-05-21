@@ -408,4 +408,8 @@ textarea:focus, textarea:active {
   width: 100%;
   box-shadow: 0 0 20px; }
 
+.dev-icon {
+  width: 70px;
+  height: 100px; }
+
 /*# sourceMappingURL=app.css.map */

@@ -28,7 +28,7 @@
                 <div class="project1 mt-4 mb-4">
                   <div class="card main-card">
                     <div class="card-body">
-                        <div class="section-sm-header"><h4>Level</h4></div>
+                        <div class="section-sm-header"><h4>Level Up</h4></div>
                       <img class="levelPic mt-4 mb-4" src="assets/IMG/levelUp.png" alt="">
                       <p><strong>ABOUT:</strong><br> 
                         Level is a landing page for a fictitious travel company.

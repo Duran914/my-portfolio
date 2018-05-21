@@ -26,9 +26,9 @@
                             <div class="row">        
                   <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9">
                   <p>Hello, my name is Johnny Duran and I'm a front-end web developer from Ventura County, &nbspCA.  
-                    I am currently in my senior year at Cal State University Northridge majoring in
+                    I am a recent graduate from Cal State University Northridge with a major in
                     Computer Information Technology. My primary focus is creating front-end websites and web 
-                    applications. I have a passion for learning new web technologies.  
+                    applications. 
                   </p>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">

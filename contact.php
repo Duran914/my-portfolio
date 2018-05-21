@@ -75,7 +75,7 @@ include "sendmail.php";
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div class="contact-social">
                 <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
                     <a class="contactSocialLink" href="https://github.com/Duran914">
                       <div class="card main-card">
                         <div class="card-body">
@@ -89,7 +89,7 @@ include "sendmail.php";
                       </div>
                     </a>
                   </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
                     <a class="contactSocialLink" href="https://www.linkedin.com/in/jonathan-duran-166037105/">
                       <div class="card main-card">
                         <div class="card-body">
@@ -98,27 +98,12 @@ include "sendmail.php";
                           <span>
                             <h4 class="conntectSocialText">Linked-In</h4>
                           </span>
-                  
                         </div>
                       </div>
                     </a>
                   </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
-                    <a class="contactSocialLink" href="https://www.instagram.com/j_duranz_/">
-                      <div class="card main-card">
-                        <div class="card-body">
-                          <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-                          <br>
-                          <span>
-                            <h4 class="conntectSocialText">Instagram</h4>
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  </section>
-                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 <?php include "inc/footer.php"?>

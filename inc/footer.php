@@ -6,7 +6,6 @@
              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
              <div class="social-icons">
                <a href="https://github.com/Duran914"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-               <a href="https://www.instagram.com/j_duranz_/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
                <a href="https://www.linkedin.com/in/jonathan-duran-166037105/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
              </div>
              </div>

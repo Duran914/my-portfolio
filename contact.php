@@ -90,7 +90,7 @@ include "sendmail.php";
                     </a>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
-                    <a class="contactSocialLink" href="https://www.linkedin.com/in/jonathan-duran-166037105/">
+                    <a class="contactSocialLink" href="https://www.linkedin.com/in/johnny-duran/">
                       <div class="card main-card">
                         <div class="card-body">
                           <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>

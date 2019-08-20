@@ -31,23 +31,23 @@ textarea:focus, textarea:active {
 
 .show-case {
   background: url("../assets/IMG/keyboard.jpeg") no-repeat;
-  padding-bottom: 50%;
+  padding-bottom: 45%;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative; }
   @media screen and (max-width: 992px) {
     .show-case {
-      padding-bottom: 550px; } }
+      padding-bottom: 55%; } }
   @media screen and (max-width: 768px) {
     .show-case {
-      padding-bottom: 560px; } }
+      padding-bottom: 80%; } }
   @media screen and (max-width: 576px) {
     .show-case {
-      padding-bottom: 580px; } }
+      padding-bottom: 80%; } }
   @media screen and (max-width: 450px) {
     .show-case {
-      padding-bottom: 600px; } }
+      padding-bottom: 90%; } }
 
 .showcase-text {
   position: absolute;
@@ -55,15 +55,7 @@ textarea:focus, textarea:active {
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 20px;
-  margin-top: 10%; }
-  @media screen and (max-width: 992px) {
-    .showcase-text {
-      margin: 30px;
-      margin-top: 10%; } }
-  @media screen and (max-width: 576px) {
-    .showcase-text {
-      margin-top: 20%; } }
+  margin: 10% 5%; }
   .showcase-text h1 {
     margin: 0 10%;
     border-radius: 5px;
@@ -73,17 +65,16 @@ textarea:focus, textarea:active {
     @media screen and (max-width: 992px) {
       .showcase-text h1 {
         margin: 0; } }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 450px) {
       .showcase-text h1 {
-        font-size: 35px; } }
+        font-size: 1.8em; } }
 
 .section-header {
-  font-size: 30px;
-  margin-left: 20px;
+  font-size: 2em;
+  text-align: center;
   color: #CDD4D9; }
   @media screen and (max-width: 768px) {
     .section-header {
-      text-align: center;
       margin-left: 0; } }
 
 .section-sm-header {
@@ -197,7 +188,7 @@ textarea:focus, textarea:active {
     margin-right: 0px; } }
 @media screen and (max-width: 768px) {
   .my-image {
-    width: 35px; }
+    width: 55px; }
 
   .toggle {
     font-size: 25px; }
@@ -210,6 +201,21 @@ textarea:focus, textarea:active {
   padding-bottom: 4%;
   padding: 0;
   overflow: hidden; }
+
+.container {
+  padding: 0 5%; }
+  @media screen and (min-width: 576px) {
+    .container {
+      padding: 0; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 5%; } }
+  @media screen and (min-width: 992px) {
+    .container {
+      padding: 0 7%; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      padding: 0 10%; } }
 
 .card {
   border: none !important; }
@@ -225,7 +231,8 @@ textarea:focus, textarea:active {
   transition-duration: 0.4s; }
   @media screen and (max-width: 450px) {
     .card-body {
-      padding: 10px; } }
+      padding: 10px;
+      text-align: center; } }
 
 .card-body.tech-icons {
   padding: 20px 0; }
@@ -285,7 +292,6 @@ textarea:focus, textarea:active {
 .btn-dark-grey, .github-btn {
   background-color: #586075;
   color: #ffffff;
-  float: right;
   border-color: #586075; }
   .btn-dark-grey:hover, .github-btn:hover {
     background-color: #2c303b;
@@ -295,9 +301,6 @@ textarea:focus, textarea:active {
     .btn-dark-grey, .github-btn {
       width: 100%;
       margin-top: 10px; } }
-
-.github-btn {
-  float: left; }
 
 .err {
   color: #ff5050;
@@ -349,15 +352,20 @@ textarea:focus, textarea:active {
   animation-duration: 3s; }
 
 .csunPicture {
-  width: 235px;
-  margin-top: -25px; }
+  width: 15%; }
   @media screen and (max-width: 992px) {
     .csunPicture {
-      margin-top: -60px;
-      margin-bottom: -40px; } }
+      width: 20%; } }
   @media screen and (max-width: 768px) {
     .csunPicture {
-      width: 150px; } }
+      width: 25%; } }
+
+.upsellPicture {
+  border-radius: 15%;
+  width: 30%; }
+  @media screen and (max-width: 576px) {
+    .upsellPicture {
+      width: 40%; } }
 
 .smlivePicture {
   width: 100px;
@@ -387,12 +395,12 @@ textarea:focus, textarea:active {
 .devicon-html5-plain-wordmark.colored, .devicon-html5-plain.colored {
   margin-bottom: 20px; }
 
-.pokemonPic, .levelPic, .meteorPic {
-  width: 90%;
+.projectPic {
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 20px; }
   @media screen and (max-width: 768px) {
-    .pokemonPic, .levelPic, .meteorPic {
+    .projectPic {
       width: 100%; } }
 
 .levelPic {
@@ -407,9 +415,5 @@ textarea:focus, textarea:active {
 .keyboardPic {
   width: 100%;
   box-shadow: 0 0 20px; }
-
-.dev-icon {
-  width: 70px;
-  height: 100px; }
 
 /*# sourceMappingURL=app.css.map */

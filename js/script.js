@@ -22,8 +22,8 @@ const formSubmitBtn = document.querySelector('#sub-form-btn');
 
 
 // Event listeners
-navBarToggler.addEventListener('click', rotateHambugerMenu);
-navbar.addEventListener('click', scrollToSection);
+// navBarToggler.addEventListener('click', rotateHambugerMenu);
+// navbar.addEventListener('click', scrollToSection);
 
 
 
@@ -32,7 +32,7 @@ Typewritter effect for showcase
 ***************************************/
 
 let typeWriteVar = '';
-let welcomeMessage = 'Hello, Im Johnny And I Build Responsive User Interfaces';
+// let welcomeMessage = 'Hi, I\'m Johnny and I\'m a Software Quality Assurance Engineer';
 
 window.onload = setTimeout( function typeWriter() {
     

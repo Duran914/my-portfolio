@@ -15,11 +15,11 @@
  
   <body>
       <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="index.php"><img src="assets/IMG/me.png" class="my-image" alt=""><span class="navbar-name">Johnny Duran</span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <a class="navbar-brand mx-auto"><img src="assets/IMG/me.png" class="my-image" alt=""><span class="navbar-name">Johnny Duran</span></a>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
             <span class="toggle"><i id="menuBars" class="fa fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          </button> 
+           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul id="navBar" class="navbar-nav justify-content-center">
               <li class="nav-item">
                 <a class="nav-link" href="index.php" id="home">Home <span class="sr-only">(current)</span></a>
@@ -31,5 +31,5 @@
                   <a class="nav-link" href="contact.php" id="contact">Contact</a>
                 </li>
             </ul>
-          </div>
+          </div> -->
         </nav>

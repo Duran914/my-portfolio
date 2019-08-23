@@ -30,44 +30,32 @@ textarea:focus, textarea:active {
   color: #99A1AE; }
 
 .show-case {
-  background: url("../assets/IMG/keyboard.jpeg") no-repeat;
-  padding-bottom: 45%;
+  background: url("../assets/IMG/keyboard.jpeg");
+  padding: 10% 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative; }
+  @media screen and (max-width: 1200px) {
+    .show-case {
+      padding: 15% 0; } }
   @media screen and (max-width: 992px) {
     .show-case {
-      padding-bottom: 55%; } }
-  @media screen and (max-width: 768px) {
-    .show-case {
-      padding-bottom: 80%; } }
-  @media screen and (max-width: 576px) {
-    .show-case {
-      padding-bottom: 80%; } }
-  @media screen and (max-width: 450px) {
-    .show-case {
-      padding-bottom: 90%; } }
+      padding: 20% 5%; } }
 
-.showcase-text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 10% 5%; }
-  .showcase-text h1 {
-    margin: 0 10%;
-    border-radius: 5px;
-    font-weight: bolder;
-    color: #e6e6e6;
-    background: rgba(79, 87, 89, 0.5); }
-    @media screen and (max-width: 992px) {
-      .showcase-text h1 {
-        margin: 0; } }
-    @media screen and (max-width: 450px) {
-      .showcase-text h1 {
-        font-size: 1.8em; } }
+.showcase-text h1 {
+  margin: 0 10%;
+  padding: 2%;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: #e6e6e6;
+  background: rgba(79, 87, 89, 0.5); }
+  @media screen and (max-width: 992px) {
+    .showcase-text h1 {
+      margin: 0; } }
+  @media screen and (max-width: 450px) {
+    .showcase-text h1 {
+      font-size: 1.8em; } }
 
 .section-header {
   font-size: 2em;

@@ -31,17 +31,17 @@ const formSubmitBtn = document.querySelector('#sub-form-btn');
 Typewritter effect for showcase
 ***************************************/
 
-let typeWriteVar = '';
-// let welcomeMessage = 'Hi, I\'m Johnny and I\'m a Software Quality Assurance Engineer';
+// let typeWriteVar = '';
+// // let welcomeMessage = 'Hi, I\'m Johnny and I\'m a Software Quality Assurance Engineer';
 
-window.onload = setTimeout( function typeWriter() {
+// window.onload = setTimeout( function typeWriter() {
     
-  if (typeWriteVar != welcomeMessage.length) {
-    document.querySelector('.type-writter-text').innerHTML += welcomeMessage.charAt(typeWriteVar);
-    typeWriteVar++;
-    setTimeout(typeWriter, 100);
-  }
-}, 1500);
+//   if (typeWriteVar != welcomeMessage.length) {
+//     document.querySelector('.type-writter-text').innerHTML += welcomeMessage.charAt(typeWriteVar);
+//     typeWriteVar++;
+//     setTimeout(typeWriter, 100);
+//   }
+// }, 1500);
  
 
 /**************************************

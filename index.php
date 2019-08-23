@@ -1,18 +1,17 @@
 <?php include "inc/header.php"?>
-
-        <div class="container-fluid">
-          <section class="show-case">
-          <div class="row text-center">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <div class="showcase-text">
-                  <h1> &ltQuality&gt<br>
-                   <span class="type-writter-text">Hi, My name is Johnny and I'm a Software QA Engineer</span><br>
-                   &lt/Assurance&gt</h1>
-                </div>
-                </div>
+          <div class="container-fluid">
+            <section class="show-case">
+            <div class="row text-center">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="showcase-text">
+                    <h1> &ltQuality&gt<br>
+                     <span class="type-writter-text">Hi, My name is Johnny and I'm a Software QA Engineer</span><br>
+                     &lt/Assurance&gt</h1>
+                  </div>
+                  </div>
+              </div>
+            </section>
             </div>
-          </section>
-          </div>
         <div class="container" id="aboutContainer">
           <section class="about-me">
           <div class="row">
@@ -50,6 +49,7 @@
                   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <img class="upsellPicture pb-2" src="assets/IMG/UpSellit-Logo.png" alt="">
                     <h3>Title: Software QA Analyst</h3>
+                    <h4>June 2018 - present</h4>
                     <p>Duties:  <br>
                      ∙ Perform manually QA tests of our solutions on client websites.<br>
                      ∙ White box, Black box and Grey box testing.<br>
@@ -73,7 +73,7 @@
               <div class="card main-card">
                 <div class="card-body tech-icons">
               <div class="stack-icons">
-                <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/python.png"></i> 
+                <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/python.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/officel/96/000000/selenium-test-automation.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/travis-ci.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/javascript.png"></i>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="container">
-          <section class="my-work mt-5" id="my-workjs">
+          <section class="my-work" id="my-workjs">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="section-header mt-5 mb-5">PROJECTS</div>
@@ -109,7 +109,7 @@
                       <p><strong>ABOUT:</strong><br> 
                         A library built to create automated UI tests of UpSellit campaigns. Library  
                         comes fully equipped with custom functions tailored for USI campaigns. Most campaign test scripts can be written
-                        around 10 lines of code. Built with Python 3 and Selenium.
+                        around 10 - 15 lines of code. Built with Python 3 and Selenium.
                         <br>
                       </p>
                       <a class="btn btn-dark-grey github-btn" target="_blank" href="https://github.com/Duran914/test-framework">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>

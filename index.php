@@ -5,7 +5,7 @@
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="showcase-text">
                     <h1> &ltQuality&gt<br>
-                     <span class="type-writter-text">Hi, My name is Johnny and I'm a Software QA Engineer</span><br>
+                     <span class="type-writter-text">Hi, my name is Johnny and I'm a Software QA Engineer</span><br>
                      &lt/Assurance&gt</h1>
                   </div>
                   </div>
@@ -49,14 +49,13 @@
                   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <img class="upsellPicture pb-2" src="assets/IMG/UpSellit-Logo.png" alt="">
                     <h3>Title: Software QA Analyst</h3>
-                    <h4>June 2018 - present</h4>
+                    <h4>June 2018 - Present</h4>
                     <p>Duties:  <br>
-                     ∙ Perform manually QA tests of our solutions on client websites.<br>
-                     ∙ White box, Black box and Grey box testing.<br>
-                     ∙ Regression & A/B testing.<br>
+                     ∙ Perform manual QA tests of our solutions on client websites.<br>
+                     ∙ White box, black box, grey box, regression, and A/B testing.<br>
                      ∙ Perform code reviews and root cause analysis of software defects.<br>
-                     ∙ Assist in Front-End developement.<br>
-                     ∙ Work closely with developers and CSMs<br> to ensure we are delivering the best quality product.<br>
+                     ∙ Assist in Front-End development.<br>
+                     ∙ Work closely with developers and CSMs<br> to ensure we are delivering the best quality software.<br>
                   </div>
                   </div>
                 </div>
@@ -73,17 +72,18 @@
               <div class="card main-card">
                 <div class="card-body tech-icons">
               <div class="stack-icons">
-                <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/python.png"></i>
+                <i><img class="devicon" src="https://img.icons8.com/color/96/000000/python.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/officel/96/000000/selenium-test-automation.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/travis-ci.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/javascript.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/html-5.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/css3.png"></i>
+                <i> <img class="devicon" style="width: 1.3em;" src="assets/IMG/litmus-logo.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/git.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/material-rounded/96/000000/github.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/ios-filled/96/000000/mysql-logo.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/amazon-s3.png"></i>
-                <!-- <i> <img class="devicon" src=""></i>                    -->
+                <i> <img class="devicon" style="width: 1.5em;" src="assets/IMG/postman_flat.png"></i>
               </div>
                 </div>
               </div>
@@ -104,10 +104,10 @@
                 <div class="project">
                   <div class="card main-card">
                     <div class="card-body">
-                        <div class="section-sm-header"><h4>USI Test Library<img class="devicon" src="https://img.icons8.com/ultraviolet/40/000000/test-partial-passed.png"></h4></div>
+                        <div class="section-sm-header"><h4>USI Test Framework<img class="devicon" src="https://img.icons8.com/ultraviolet/40/000000/test-partial-passed.png"></h4></div>
                       <img class="projectPic mt-4 mb-4" src="https://raw.githubusercontent.com/Duran914/images/master/demo_tt.png" alt="">
                       <p><strong>ABOUT:</strong><br> 
-                        A library built to create automated UI tests of UpSellit campaigns. Library  
+                        A Framework built to create automated UI tests of UpSellit campaigns. Framework  
                         comes fully equipped with custom functions tailored for USI campaigns. Most campaign test scripts can be written
                         around 10 - 15 lines of code. Built with Python 3 and Selenium.
                         <br>

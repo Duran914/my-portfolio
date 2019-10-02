@@ -1,7 +1,7 @@
 <footer class="foot bg-dark mt-5">
             <div class="row">
              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <div class="footer-text">Copyright © 2019 Johnny Duran <img src="assets/IMG/me-white.png" class="my-image-sm" alt=""></div>
+              <div class="footer-text"><span class="current_date"></span> Johnny Duran - SQA <img src="assets/IMG/me-white.png" class="my-image-sm" alt=""></div>
              </div>
              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
              <div class="social-icons">

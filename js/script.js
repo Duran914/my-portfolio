@@ -225,3 +225,10 @@ function characterCounterColor(characterCount){
     }
 }
 
+
+function setDate() {
+    var currentYear = new Date().getFullYear();
+    console.log(currentYear);
+    document.querySelector(".current_date").innerHTML = currentYear;
+  }
+  setDate();

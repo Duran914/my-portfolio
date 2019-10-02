@@ -225,6 +225,15 @@ textarea:focus, textarea:active {
 .card-body.tech-icons {
   padding: 20px 0; }
 
+.stack-icons {
+  padding: 0 2em; }
+  @media screen and (max-width: 450px) {
+    .stack-icons {
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (max-width: 350px) {
+    .stack-icons {
+      padding: 0; } }
+
 .foot {
   color: #CDD4D9;
   padding: 15px;

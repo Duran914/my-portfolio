@@ -229,7 +229,7 @@ textarea:focus, textarea:active {
       font-size: 0.8em !important; } }
 
 .card-body p.card-p-text-project-about {
-  font-size: 1.4em !important; }
+  font-size: 1.3em !important; }
   @media screen and (max-width: 450px) {
     .card-body p.card-p-text-project-about {
       font-size: 1em !important; } }

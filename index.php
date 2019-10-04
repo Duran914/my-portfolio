@@ -26,8 +26,8 @@
                   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                   <img class="csunPicture" src="assets/IMG/csun.png" alt="">
                     <h3>California State University Northridge '18</h3>  
-                    <h4>∙ B.S. Computer Information Technology</h4>
-                    <h4>∙ Minor in History</h4>
+                    <h5>∙ B.S. Computer Information Technology</h5>
+                    <h5>∙ Minor in History</h5>
                   </div>
                   </div>
                 </div>
@@ -49,8 +49,8 @@
                   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <img class="upsellPicture pb-2" src="assets/IMG/UpSellit-Logo.png" alt="">
                     <h3>Title: Software QA Analyst</h3>
-                    <h4>June 2018 - Present</h4>
-                    <p>Duties:  <br>
+                    <h5>June 2018 - Present</h5>
+                    <p class="card-p-text">Duties:  <br>
                      ∙ Perform manual QA tests of our solutions on client websites.<br>
                      ∙ White box, black box, grey box, regression, and A/B testing.<br>
                      ∙ Perform code reviews and root cause analysis of software defects.<br>
@@ -83,7 +83,7 @@
                 <i> <img class="devicon" src="https://img.icons8.com/material-rounded/96/000000/github.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/ios-filled/96/000000/mysql-logo.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/amazon-s3.png"></i>
-                <i> <img class="devicon" style="width: 1.5em;" src="assets/IMG/postman_flat.png"></i>
+                <i> <img class="devicon" style="width: 1.4em;" src="assets/IMG/postman_flat.png"></i>
               </div>
                 </div>
               </div>
@@ -104,14 +104,15 @@
                 <div class="project">
                   <div class="card main-card">
                     <div class="card-body">
-                        <div class="section-sm-header"><h4>USI Test Framework<img class="devicon" src="https://img.icons8.com/ultraviolet/40/000000/test-partial-passed.png"></h4></div>
+                        <div class="section-sm-header"><h3>USI Test Framework</h3></div>
                       <img class="projectPic mt-4 mb-4" src="https://raw.githubusercontent.com/Duran914/images/master/demo_tt.png" alt="">
-                      <p><strong>ABOUT:</strong><br> 
-                        A Framework built to create automated UI tests of UpSellit campaigns. Framework  
+                      <h5><strong>ABOUT:</strong></h5>
+                      <p class="card-p-text-project-about">
+                        A framework built to create automated UI tests of UpSellit campaigns. Framework  
                         comes fully equipped with custom functions tailored for USI campaigns. Most campaign test scripts can be written
                         around 10 - 15 lines of code. Built with Python 3 and Selenium.
-                        <br>
                       </p>
+                        <br>
                       <a class="btn btn-dark-grey github-btn" target="_blank" href="https://github.com/Duran914/test-framework">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
                     </div>
                   </div>

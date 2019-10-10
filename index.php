@@ -52,10 +52,10 @@
                     <h5>June 2018 - Present</h5>
                     <p class="card-p-text"><strong>Responsibilities:</strong>  <br>
                      ∙ Perform manual QA tests of our solutions on client websites.<br>
-                     ∙ User acceptance, white box, grey box, black box, E-mail, regression, and A/B testing.<br>
+                     ∙ User experience, white box, grey box, black box, E-mail,<br> regression, and A/B testing.<br>
                      ∙ Perform code reviews and root cause analysis of software defects.<br>
-                     ∙ Provide bug documentation of software defects in a clear and understandable manner.<br>
-                     ∙ Assist in Front-End development.<br>
+                     ∙ Provide bug reports of software defects.<br>
+                     ∙ Assist in front-end development.<br>
                      ∙ Work closely with developers and CSMs to ensure we are delivering the best quality software.<br>
                   </div>
                   </div>

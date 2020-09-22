@@ -50,14 +50,17 @@
                     <img class="upsellPicture pb-2" src="assets/IMG/UpSellit-Logo.png" alt="">
                     <h3>Title: Software QA Analyst</h3>
                     <h5>June 2018 - Present</h5>
-                    <p class="card-p-text"><strong>Responsibilities:</strong>  <br>
-                     ∙ Perform manual QA tests of our solutions on client websites.<br>
-                     ∙ User experience, white box, grey box, black box, E-mail,<br> regression, and A/B testing.<br>
-                     ∙ Perform code reviews and root cause analysis of software defects.<br>
-                     ∙ Provide bug reports of software defects.<br>
-                     ∙ Assist in front-end development.<br>
-                     ∙ Work closely with developers and CSMs to ensure we are delivering the best quality software.<br>
-                  </div>
+                    <p class="card-p-text"><strong>Responsibilities:</strong> <br>
+                     <span class="dot"> Develop manual test cases based on client business rules and technology specification. </span>
+                     <span class="dot"> Execute test cases of our javascript solutions on  client websites and web applications.</span><br>
+                     <span class="dot"> Perform a variety of different testing strategies such as end-to end, alpha, regression and browser compatibility testing.</span>
+                     <span class="dot"> Test a variety of abandonment solutions such as  browser modals, chat AI, email and mobile text message based solutions.</span>
+                     <span class="dot"> Perform code reviews and root cause analysis of software defects/vulnerabilities.</span> <br>
+                     <span class="dot"> Provide excellent bug documentation and steps of recreation in a clear and understandable manner.</span>
+                     <span class="dot"> Assist in front-end development when needed.</span>
+                     <span class="dot"> Work closely with fully remote developers and customer service managers to ensure we are delivering the best quality software.</span>
+                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,6 +78,7 @@
               <div class="stack-icons">
                 <i><img class="devicon" src="https://img.icons8.com/color/96/000000/python.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/officel/96/000000/selenium-test-automation.png"></i>
+                <i> <img class="devicon" style="width: 1em;" src="assets/IMG/puppeteer.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/travis-ci.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/javascript.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/html-5.png"></i>
@@ -83,7 +87,6 @@
                 <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/git.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/material-rounded/96/000000/github.png"></i>
                 <i> <img class="devicon" src="https://img.icons8.com/ios-filled/96/000000/mysql-logo.png"></i>
-                <i> <img class="devicon" src="https://img.icons8.com/color/96/000000/amazon-s3.png"></i>
                 <i> <img class="devicon" style="width: 1.4em;" src="assets/IMG/postman_flat.png"></i>
               </div>
                 </div>
